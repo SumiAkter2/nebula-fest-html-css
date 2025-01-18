@@ -29,6 +29,9 @@
     justify-content: center;
     background-color: #fff;
     border: 2px solid #fff; 
+    
+}
+.banner-wheel-icon,.up-arrow{
     position: absolute;  
     top: 10%;
     right: 2%;
@@ -119,12 +122,12 @@
     
 }
 @media screen and (max-width: 768px) {
+    /* banner section */
     .banner-content{
      height: 100%;
      padding: 50px;
     }
-    .wheel-icon {
-       
+    .banner-wheel-icon {
         top: 20%;
         right: 4%;
     }
@@ -162,12 +165,16 @@
     .card-btn{
        border-radius: 999px;
     }
+   
     .up-arrow{
         display: none;
+        
     }
     .up-arrow-for-mobile{
         display: block;
-        bottom: 0;
+        position: absolute;
+        bottom: 5%;
+        right: 2% !important;
         background: var(--secondary-color) !important;
         border:2px solid var(--secondary-color);
     }
