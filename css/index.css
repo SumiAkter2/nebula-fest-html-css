@@ -20,8 +20,8 @@
     color: var(--white-color);
 }
 .wheel-icon {
-    width: 70px;     
-    height: 70px;
+    width: 40px;     
+    height: 40px;
     border-radius: 50%;  
     overflow: hidden;   
     display: flex;
@@ -35,8 +35,8 @@
 }
 
 .wheel-icon img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     object-fit: cover; 
 }
 
@@ -105,7 +105,13 @@
     position: absolute;
     bottom: 20px;
 }
-
+.edition-content{
+        background-color:var(--secondary-color);
+        padding: 50px 0;
+        color: var(--white-color);
+        position: relative;
+  
+}
 /* media */
 @media screen and (max-width: 999px) {
     
@@ -121,12 +127,12 @@
         right: 4%;
     }
     .wheel-icon {
-        width: 50px;     
-        height: 50px;
+        width: 40px;     
+        height: 40px;
     }
     .wheel-icon img {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
     .banner-content h3{
         font-size: 14px;
@@ -153,5 +159,8 @@
     /* day-by-day */
     .card-btn{
        border-radius: 999px;
+    }
+    .up-arrow{
+        display: none;
     }
 }

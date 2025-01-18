@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/css/navbar.css">
   <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" href="/css/share.css">
+  <link rel="stylesheet" href="/css/slider.css">
   
 </head>
 <body>
@@ -154,9 +155,68 @@
 
         </div>
        </div>
+
+     <!-- for mobile -->
+     
+     
       </div>
      </div>
    
+
+
+     <!-- PAST EDITION -->
+
+     <div class="edition-content">
+       
+        <div class="container">
+            <div class="wheel-icon up-arrow">
+                <img src="./images/Home/direction.png" alt="icon-img">
+            </div>
+         <h1 class="header-text">PASSADA EDICIÓ</h1>
+         <!-- for desktop -->
+         <div class="card-section">
+           
+          <div class="img-card">
+            <img src="./images/Home/img1.png" alt="card-img">
+          </div>
+          <div class="img-card">
+            <img src="./images/Home/img2.png" alt="card-img">
+          </div>
+          <div class="img-card">
+            <img src="./images/Home/img3.png" alt="card-img">
+          </div>
+          
+         </div>
+
+         <!-- for mobile -->
+        <div class="img-slider">
+          <section class="wrapper">
+            <div class="img-slide-container">
+              
+              <div class="slideDiv">
+                <article class="slide active">
+                </article>
+                 <article class="slide">
+                </article>
+                 <article class="slide">
+                </article>
+          
+              </div>  
+            
+            
+            </div>  
+          </section>
+          <nav class="controls">
+            <button class="button" type="button" aria-label="Go to first image"></button>
+            <button class="button" type="button" aria-label="Go to second image"></button>
+            <button class="button" type="button" aria-label="Go to third image"></button>
+           
+          </nav>
+        </div>
+         
+        </div>
+       </div>
+     
 </main>
 
 
@@ -203,7 +263,36 @@
 
 
  <!-- JavaScript -->
+<!-- <script src="./js/imageSlider.js"></script>
+-->
+<script>
+    (function() {
+function controls() {
+ this.classList.add('selected');
+ Array.from(this.parentNode.children).forEach(sibling => {
+   if (sibling !== this) sibling.classList.remove('selected');
+ });
 
+ const containerHeight = document.querySelector('.img-slide-container').offsetHeight;
+ const slideDiv = document.querySelector('.slideDiv');
+ const index = Array.from(this.parentNode.children).indexOf(this);
+
+ slideDiv.style.transition = 'top 0.45s';
+ slideDiv.style.top = `-${containerHeight * index}px`;
+}
+
+function runCode() {
+ const buttons = document.querySelectorAll('.button');
+//  buttons.addEventListener.c
+ buttons.forEach(button => {
+   button.addEventListener('click', controls, false);
+ });
+}
+
+runCode();
+})();
+
+   </script>
  <script>
     function toggleSearch(iconId, inputId) {
     const icon = document.getElementById(iconId);
@@ -225,31 +314,7 @@
 toggleSearch('search-icon-mobile', 'search-input-mobile');
 toggleSearch('search-icon-desktop', 'search-input-desktop');
 
-    // menu icon
-    // const mobileMenu = document.getElementById('mobile-menu');
-    // const navButtons = document.querySelector('.navbar-menu');
-    // const navRightContent = document.querySelector('.nav-right-content');
-
-    // mobileMenu.addEventListener('click', function () {
-    //   mobileMenu.classList.toggle('active');
-    //   navButtons.classList.toggle('active');
-    //   navRightContent.classList.toggle('active');
-    // });
-
-// search icon:
-//     const searchIcon = document.getElementById('search-icon');
-//     const searchInput = document.getElementById('search-input');
   
-//   searchIcon.addEventListener('click', () => {
-//   searchInput.style.display = 'block';
-//   searchIcon.style.display = "none";
-//   searchInput.focus();
-// });
-
-// searchInput.addEventListener('blur', () => {
-//   searchInput.style.display = 'none';
-//   searchIcon.style.display = "block";
-// });
 
 
   </script>
