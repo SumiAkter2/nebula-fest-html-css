@@ -4,103 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Navbar</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    nav {
-      background-color: #f4e04d;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #5e548e;
-    }
-
-    .nav-links {
-      display: flex;
-      list-style: none;
-      transition: all 0.5s ease-in-out;
-    }
-
-    .nav-links li {
-      margin: 0 15px;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #5e548e;
-      font-weight: bold;
-    }
-
-    .menu-toggle {
-      display: none;
-      font-size: 28px;
-      cursor: pointer;
-    }
-
-    @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: -300px;
-        left: 0;
-        background-color: #f4e04d;
-        transition: all 0.5s ease-in-out;
-      }
-
-      .nav-links.active {
-        display: flex;
-        top: 60px;
-      }
-
-      .menu-toggle {
-        display: block;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/css/navbar.css">
+  
 </head>
 <body>
+    <!-- header -->
+<header class="">
+    <!-- top header section -->
+    <div class="top-header container">
+        
+       <p class="date-text">10 - 19 OCTUBRE 2025</p>
+       <ul>
+        <li>ACTUALITAT  </li>
+        <li>INDÚSTRIA   </li>
+        <li>ORGANITZACIÓ  </li>
+        <li>PREMSA  </li>
+        <li>CONTACTE  </li>
+       </ul>
+    </div>
+    <!-- navbar  -->
+     <nav class="navbar container">
+        <div class="nav-log">
+            <img src="./images/Home/logo.png" alt="logo">
+        </div>
+        <!-- nav item -->
+        <ul>
+            <li><a href="#">INICI</a></li>
+            <li><a href="#">EL FESTIVAL</a></li>
+            <li><a href="#">PROGRAMACIÓ</a></li>
+            <li><a href="#">PEL·LÍCULA</a></li>
+        </ul>
+        <!-- right nav -->
+        <div>
+            <div class="search-container">
+                <span id="search-icon"><img src="./images/Home/search.png" alt="search-icon"></span>
+                <input type="text" id="search-input" placeholder="Search..." style="display: none;">
+              </div>
+        </div>
+     </nav>
+</header>
 
-  <nav>
-    <div class="logo">NEDULAFEST</div>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#program">Program</a></li>
-      <li><a href="#movies">Movies</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  
+<!-- for search icon -->
+ <!-- JavaScript -->
+<script>
+    const searchIcon = document.getElementById('search-icon');
+    const searchInput = document.getElementById('search-input');
+  
+    searchIcon.addEventListener('click', () => {
+  searchInput.style.display = 'block';
+  searchIcon.style.display = "none";
+  searchInput.focus();
+});
 
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
+searchInput.addEventListener('blur', () => {
+  searchInput.style.display = 'none';
+  searchIcon.style.display = "block";
+});
 
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
   </script>
-
 </body>
 </html>
