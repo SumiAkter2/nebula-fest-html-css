@@ -335,6 +335,7 @@ width: 150px;
     }
     .top-footer-content{
         text-align: center;
+        position: relative;
     }
     .footer-images-content img{
     width: 100px;

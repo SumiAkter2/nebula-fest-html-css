@@ -39,7 +39,9 @@
     height: 30px;
     object-fit: cover; 
 }
-
+.up-arrow-for-mobile{
+    display: none;
+}
 .banner-content h3{
     font-size: 22px;
 }
@@ -162,5 +164,14 @@
     }
     .up-arrow{
         display: none;
+    }
+    .up-arrow-for-mobile{
+        display: block;
+        bottom: 0;
+        background: var(--secondary-color) !important;
+        border:2px solid var(--secondary-color);
+    }
+    .up-arrow-for-mobile img{
+        padding-top: 10px;
     }
 }
