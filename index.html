@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Navbar</title>
+  <title>NEBULAFEST</title>
+  <link rel="shortcut icon" href="./images/Home/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="/css/navbar.css">
   
 </head>
@@ -24,34 +25,67 @@
     </div>
     <!-- navbar  -->
      <nav class="navbar container">
-        <div class="nav-log">
+        <div class="nav-logo">
             <img src="./images/Home/logo.png" alt="logo">
         </div>
+          <!-- Hamburger Icon -->
+          <div class="menu-toggle" id="mobile-menu">
+           
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         <!-- nav item -->
-        <ul>
+        <ul class="navbar-menu">
             <li><a href="#">INICI</a></li>
             <li><a href="#">EL FESTIVAL</a></li>
             <li><a href="#">PROGRAMACIÓ</a></li>
             <li><a href="#">PEL·LÍCULA</a></li>
         </ul>
         <!-- right nav -->
-        <div>
+        
+        <div class="nav-right-content">
+            <div class="category">
+                <p class="category-text">
+                CAT <img style="width: 20px;" src="./images/Home/direction-down.png" alt="down-arraw"> 
+                </p>
+                <div class="category-content">
+                    <p value="art"> Art</p>
+                    <p value="music"> Music</p>
+                    <p value="movies"> Movies</p>
+                    <p value="books"> Books</p>
+                </div>
+              </div>
             <div class="search-container">
-                <span id="search-icon"><img src="./images/Home/search.png" alt="search-icon"></span>
+                <span id="search-icon">
+                    <img src="./images/Home/search.png" alt="search-icon"></span>
                 <input type="text" id="search-input" placeholder="Search..." style="display: none;">
               </div>
         </div>
+       
      </nav>
 </header>
 
-  
-<!-- for search icon -->
+
  <!-- JavaScript -->
-<script>
+
+ <script>
+    // menu icon
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navButtons = document.querySelector('.navbar-menu');
+    const navRightContent = document.querySelector('.nav-right-content');
+
+    mobileMenu.addEventListener('click', function () {
+      mobileMenu.classList.toggle('active');
+      navButtons.classList.toggle('active');
+      navRightContent.classList.toggle('active');
+    });
+
+// search icon:
     const searchIcon = document.getElementById('search-icon');
     const searchInput = document.getElementById('search-input');
   
-    searchIcon.addEventListener('click', () => {
+  searchIcon.addEventListener('click', () => {
   searchInput.style.display = 'block';
   searchIcon.style.display = "none";
   searchInput.focus();
@@ -61,6 +95,7 @@ searchInput.addEventListener('blur', () => {
   searchInput.style.display = 'none';
   searchIcon.style.display = "block";
 });
+
 
   </script>
 </body>
