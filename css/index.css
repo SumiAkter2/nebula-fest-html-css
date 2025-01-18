@@ -65,10 +65,49 @@
     font-weight: 700;
     border: 0;
     width: 200px;
+    transition: all 0.3s ease-in;
+}
+.banner-btn:hover{
+    background-color: var(--white-color);
+    cursor: pointer;
+    scale: 0.95;
+}
+
+/* day-by-day-content */
+.day-by-day-content{
+    background-color: var(--primary-color);
+    padding: 30px 0;
+}
+.date-content{
+    background: var(--black-color);
+    width: 70px;
+    height: 70px;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.date{
+    font-weight: 700;
+    padding: 2px;
+    font-size: 18px;
+}
+.card-btn{
+    background: var(--black-color);
+    padding: 8px 12px;
+    color: var(--white-color);
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border:0;
+    position: absolute;
+    bottom: 20px;
 }
 
 /* media */
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 999px) {
     
 }
 @media screen and (max-width: 768px) {
@@ -110,5 +149,9 @@
         height: 50px;
         width: 200px;
         border-radius: 990px;
+    }
+    /* day-by-day */
+    .card-btn{
+       border-radius: 999px;
     }
 }
