@@ -1,0 +1,17 @@
+
+:root {
+    --primary-color: #F5E866;
+    --secondary-color: #A08FD5;
+    --gray-color: #D6D6D6;
+  }
+  /* for no margin and padding */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+  
