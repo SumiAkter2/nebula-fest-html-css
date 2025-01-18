@@ -127,6 +127,9 @@ body{
  .search-container {
     position: relative;
   }
+  .search-container-mobile{
+    display: none;
+  }
   #search-icon img{
     width: 60px;
   }
@@ -203,7 +206,7 @@ body{
         text-align: center;
         position: absolute;
         left:0;
-        padding:  20px 0;
+        padding: 10px 0;
         transition: all 0.58s ease-in-out;
         transform: translateY(-100px);
     }
@@ -215,7 +218,7 @@ body{
         margin-top: 10px;
     }
     .nav-right-content {
-        top: 310px; 
+        top: 285px; 
         text-align: center;
     }
     .nav-right-content  {
@@ -238,6 +241,12 @@ body{
     .top-header ul {
         display: flex;
         justify-content: space-between;
+    }
+    .search-container{
+        display: none;
+    }
+    .search-container-mobile{
+        display: block;
     }
   }
 
