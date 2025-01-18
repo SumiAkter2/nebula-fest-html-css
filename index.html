@@ -30,9 +30,9 @@
         </div>
          <!-- search container  -->
         <div class="search-container search-container-mobile">
-            <span id="search-icon">
+            <span id="search-icon-mobile">
                 <img src="./images/Home/search.png" alt="search-icon"></span>
-            <input type="text" id="search-input" placeholder="Search..." style="display: none;">
+            <input type="text" id="search-input-mobile" placeholder="Search..." style="display: none;">
           </div>
           <!-- Hamburger Icon -->
           <div class="menu-toggle" id="mobile-menu">
@@ -64,9 +64,9 @@
               </div>
         <!-- search container  -->
             <div class="search-container">
-                <span id="search-icon">
+                <span id="search-icon-desktop">
                     <img src="./images/Home/search.png" alt="search-icon"></span>
-                <input type="text" id="search-input" placeholder="Search..." style="display: none;">
+                <input type="text" id="search-input-desktop" placeholder="Search..." style="display: none;">
               </div>
         </div>
        
@@ -95,7 +95,7 @@
            <img class="round-img" src="./images/Home/Lay's_logo_2019.svg 1.png" alt="icon">
            <img class="round-img" src="./images/Home/grefusa-snacks-ffss 1.png" alt="icon">
            <img src="./images/Home/Danone_spain 1.png" alt="icon">
-           <img src="./images/Home/estrella-damm-logo 1.png" alt="icon">
+           <img class="star-img" src="./images/Home/estrella-damm-logo 1.png" alt="icon">
         </div>
     </div>
     </div>
@@ -123,31 +123,51 @@
  <!-- JavaScript -->
 
  <script>
-    // menu icon
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navButtons = document.querySelector('.navbar-menu');
-    const navRightContent = document.querySelector('.nav-right-content');
+    function toggleSearch(iconId, inputId) {
+    const icon = document.getElementById(iconId);
+    const input = document.getElementById(inputId);
 
-    mobileMenu.addEventListener('click', function () {
-      mobileMenu.classList.toggle('active');
-      navButtons.classList.toggle('active');
-      navRightContent.classList.toggle('active');
+    icon.addEventListener('click', () => {
+        input.style.display = 'block';
+        icon.style.display = 'none';
+        input.focus();
     });
 
-// search icon:
-    const searchIcon = document.getElementById('search-icon');
-    const searchInput = document.getElementById('search-input');
-  
-  searchIcon.addEventListener('click', () => {
-  searchInput.style.display = 'block';
-  searchIcon.style.display = "none";
-  searchInput.focus();
-});
+    input.addEventListener('blur', () => {
+        input.style.display = 'none';
+        icon.style.display = 'block';
+    });
+}
 
-searchInput.addEventListener('blur', () => {
-  searchInput.style.display = 'none';
-  searchIcon.style.display = "block";
-});
+// Apply for Mobile and Desktop
+toggleSearch('search-icon-mobile', 'search-input-mobile');
+toggleSearch('search-icon-desktop', 'search-input-desktop');
+
+    // menu icon
+    // const mobileMenu = document.getElementById('mobile-menu');
+    // const navButtons = document.querySelector('.navbar-menu');
+    // const navRightContent = document.querySelector('.nav-right-content');
+
+    // mobileMenu.addEventListener('click', function () {
+    //   mobileMenu.classList.toggle('active');
+    //   navButtons.classList.toggle('active');
+    //   navRightContent.classList.toggle('active');
+    // });
+
+// search icon:
+//     const searchIcon = document.getElementById('search-icon');
+//     const searchInput = document.getElementById('search-input');
+  
+//   searchIcon.addEventListener('click', () => {
+//   searchInput.style.display = 'block';
+//   searchIcon.style.display = "none";
+//   searchInput.focus();
+// });
+
+// searchInput.addEventListener('blur', () => {
+//   searchInput.style.display = 'none';
+//   searchIcon.style.display = "block";
+// });
 
 
   </script>
