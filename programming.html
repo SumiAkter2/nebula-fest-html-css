@@ -240,30 +240,17 @@ runCode();
 })();
 
    </script>
- <script>
-    function toggleSearch(iconId, inputId) {
-    const icon = document.getElementById(iconId);
-    const input = document.getElementById(inputId);
+ <!-- navbr toggle -->
+ 
 
-    icon.addEventListener('click', () => {
-        input.style.display = 'block';
-        icon.style.display = 'none';
-        input.focus();
-    });
+<script>
+  const menuToggle = document.getElementById('mobile-menu');
+const menu = document.getElementById('menu');
 
-    input.addEventListener('blur', () => {
-        input.style.display = 'none';
-        icon.style.display = 'block';
-    });
-}
-
-// Apply for Mobile and Desktop
-toggleSearch('search-icon-mobile', 'search-input-mobile');
-toggleSearch('search-icon-desktop', 'search-input-desktop');
-
-  
-
-
-  </script>
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+</script>
 </body>
 </html>

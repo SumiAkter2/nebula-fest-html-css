@@ -408,35 +408,17 @@
   })();
   </script>
   
-
-
+<!-- navbr toggle -->
  
 
-   <!-- search icon -->
- <script>
-    function toggleSearch(iconId, inputId) {
-    const icon = document.getElementById(iconId);
-    const input = document.getElementById(inputId);
+<script>
+  const menuToggle = document.getElementById('mobile-menu');
+const menu = document.getElementById('menu');
 
-    icon.addEventListener('click', () => {
-        input.style.display = 'block';
-        icon.style.display = 'none';
-        input.focus();
-    });
-
-    input.addEventListener('blur', () => {
-        input.style.display = 'none';
-        icon.style.display = 'block';
-    });
-}
-
-// Apply for Mobile and Desktop
-toggleSearch('search-icon-mobile', 'search-input-mobile');
-toggleSearch('search-icon-desktop', 'search-input-desktop');
-
-  
-
-
-  </script>
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+</script>
 </body>
 </html>
