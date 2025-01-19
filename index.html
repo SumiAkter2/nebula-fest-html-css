@@ -96,9 +96,9 @@
 
     <!-- NEWS - DAY BY DAY -->
      <div class="day-by-day-content">
-      <div class="container">
-       <h1 class="header-text">ACTUALITAT - DIA A DIA</h1>
-       <div class="card-section">
+      <div class="">
+       <h1 class="header-text container">ACTUALITAT - DIA A DIA</h1>
+       <div class="card-section day-by-day-card-section container">
         <div class="card">
             <div class="date-content">
               <div>  nov. <br> <span class="date">21</span><br> 2024</div>
@@ -156,9 +156,94 @@
         </div>
        </div>
 
-     <!-- for mobile -->
+     <!--card-slider for mobile -->
      
+     <div class="card-slider">
+      <section class="wrapper">
+        <div class="card-slide-container">
+          
+          <div class="slideDiv">
+            <article class="card-slide active " >
+              <div class="card">
+                  <div class="date-content">
+                    <div>  nov. <br> <span class="date">21</span><br> 2024</div>
+                  </div>
+                   <div class="card-body">
+                      <h2 class="card-header">
+                          Nebulafest tanca definitivament una 
+                          2a edició que ha reunit més de 10.000 
+                          espectadors presencials i gairebé 8.000 
+                          en línia
+                       </h2>
+                       <br>
+                       <p class="card-text">Nebulafest deixa definitivament enrere la seva 2a edició i ho fa
+                          amb unes xifres que certifiquen el creixement sostingut que ha 
+                          experimentat el certamen els darrers anys...</p>
+                          <button class="card-btn">LLEGIR MÉS</button>
+                     
+                   </div>
+              
+              </div>
+            </article>
+             <article class="card-slide">
+           <div class="card-section">
+              <div class="card">
+                  <div class="date-content">
+                    <div>  nov. <br> <span class="date">21</span><br> 2024</div>
+                  </div>
+                   <div class="card-body">
+                      <h2 class="card-header">
+                          Nebulafest tanca definitivament una 
+                          2a edició que ha reunit més de 10.000 
+                          espectadors presencials i gairebé 8.000 
+                          en línia
+                       </h2>
+                       <br>
+                       <p class="card-text">Nebulafest deixa definitivament enrere la seva 2a edició i ho fa
+                          amb unes xifres que certifiquen el creixement sostingut que ha 
+                          experimentat el certamen els darrers anys...</p>
+                          <button class="card-btn">LLEGIR MÉS</button>
+                     
+                   </div>
+              
+              </div>
+           </div>
+            </article>
+             <article class="card-slide">
+              <div class="card">
+                  <div class="date-content">
+                    <div>  nov. <br> <span class="date">21</span><br> 2024</div>
+                  </div>
+                   <div class="card-body">
+                      <h2 class="card-header">
+                          Nebulafest tanca definitivament una 
+                          2a edició que ha reunit més de 10.000 
+                          espectadors presencials i gairebé 8.000 
+                          en línia
+                       </h2>
+                       <br>
+                       <p class="card-text">Nebulafest deixa definitivament enrere la seva 2a edició i ho fa
+                          amb unes xifres que certifiquen el creixement sostingut que ha 
+                          experimentat el certamen els darrers anys...</p>
+                          <button class="card-btn">LLEGIR MÉS</button>
+                     
+                   </div>
+              
+              </div>
+            </article>
+      
+          </div>  
+        
+        
+        </div>  
+      </section>
+      <nav class="controls">
+        <button class="button card-slide-btn" type="button" aria-label="Go to first card"></button>
+        <button class="button card-slide-btn" type="button" aria-label="Go to second card"></button>
+        <button class="button card-slide-btn" type="button" aria-label="Go to third card"></button>
      
+      </nav>
+    </div>
       </div>
      </div>
    
@@ -168,13 +253,13 @@
 
      <div class="edition-content">
        
-        <div class="container">
-            <div class="wheel-icon up-arrow">
+        <div class="">
+            <div class="wheel-icon up-arrow ">
                 <img src="./images/Home/direction.png" alt="icon-img">
             </div>
-         <h1 class="header-text">PASSADA EDICIÓ</h1>
+         <h1 class="header-text container">PASSADA EDICIÓ</h1>
          <!-- for desktop -->
-         <div class="card-section">
+         <div class="card-section container">
            
           <div class="img-card">
             <img src="./images/Home/img1.png" alt="card-img">
@@ -200,16 +285,14 @@
                 </article>
                  <article class="slide">
                 </article>
-          
-              </div>  
-            
-            
+              </div> 
+             <!-- control button -->
             </div>  
           </section>
           <nav class="controls">
-            <button class="button" type="button" aria-label="Go to first image"></button>
-            <button class="button" type="button" aria-label="Go to second image"></button>
-            <button class="button" type="button" aria-label="Go to third image"></button>
+          <button class="button img-slide-btn" type="button" aria-label="Go to first image"></button>
+          <button class="button img-slide-btn" type="button" aria-label="Go to second image"></button>
+          <button class="button img-slide-btn" type="button" aria-label="Go to third image"></button>
            
           </nav>
         </div>
@@ -262,36 +345,68 @@
 
 
  <!-- JavaScript -->
+  
 <!-- <script src="./js/imageSlider.js"></script>
 -->
 <script>
-    (function() {
-function controls() {
- this.classList.add('selected');
- Array.from(this.parentNode.children).forEach(sibling => {
-   if (sibling !== this) sibling.classList.remove('selected');
- });
+  // For card slider
+  (function() {
+    function controls() {
+      this.classList.add('selected');
+      Array.from(this.parentNode.children).forEach(sibling => {
+        if (sibling !== this) sibling.classList.remove('selected');
+      });
+  
+      const containerHeight = document.querySelector('.card-slide-container').offsetHeight;
+      const slideDiv = document.querySelector('.card-slide-container .slideDiv');
+      const index = Array.from(this.parentNode.children).indexOf(this);
+  
+      slideDiv.style.transition = 'top 0.45s';
+      slideDiv.style.top = `-${containerHeight * index}px`;
+    }
+  
+    function runCode() {
+      const buttons = document.querySelectorAll('.card-slide-btn');
+      buttons.forEach(button => {
+        button.addEventListener('click', controls, false);
+      });
+    }
+  
+    runCode();
+  })();
+  
+  // For img slider
+  (function() {
+    function controls() {
+      this.classList.add('selected');
+      Array.from(this.parentNode.children).forEach(sibling => {
+        if (sibling !== this) sibling.classList.remove('selected');
+      });
+  
+      const containerHeight = document.querySelector('.img-slide-container').offsetHeight;
+      const slideDiv = document.querySelector('.img-slide-container .slideDiv');
+      const index = Array.from(this.parentNode.children).indexOf(this);
+  
+      slideDiv.style.transition = 'top 0.45s';
+      slideDiv.style.top = `-${containerHeight * index}px`;
+    }
+  
+    function runCode() {
+      const buttons = document.querySelectorAll('.img-slide-btn');
+      buttons.forEach(button => {
+        button.addEventListener('click', controls, false);
+      });
+    }
+  
+    runCode();
+  })();
+  </script>
+  
 
- const containerHeight = document.querySelector('.img-slide-container').offsetHeight;
- const slideDiv = document.querySelector('.slideDiv');
- const index = Array.from(this.parentNode.children).indexOf(this);
 
- slideDiv.style.transition = 'top 0.45s';
- slideDiv.style.top = `-${containerHeight * index}px`;
-}
+ 
 
-function runCode() {
- const buttons = document.querySelectorAll('.button');
-//  buttons.addEventListener.c
- buttons.forEach(button => {
-   button.addEventListener('click', controls, false);
- });
-}
-
-runCode();
-})();
-
-   </script>
+   <!-- search icon -->
  <script>
     function toggleSearch(iconId, inputId) {
     const icon = document.getElementById(iconId);

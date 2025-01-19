@@ -98,6 +98,7 @@
     font-weight: 700;
     padding: 2px;
     font-size: 18px;
+    line-height: 1;
 }
 .card-btn{
     background: var(--black-color);
@@ -164,6 +165,9 @@
     /* day-by-day */
     .card-btn{
        border-radius: 999px;
+    }
+    .date{
+        line-height: 1.9;
     }
    
     .up-arrow{

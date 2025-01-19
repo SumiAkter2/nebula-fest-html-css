@@ -8,9 +8,10 @@
 * {
     box-sizing: border-box;
   }
-
-  .img-slider{
+  *
+  .img-slider,.card-slider{
     display: none;
+    position: relative;
   }
   .wrapper {
     word-wrap: break-word;
@@ -19,17 +20,20 @@
   }
   
   .wrapper,
-  .img-slide-container {
+  .img-slide-container,.card-slide-container {
     margin: 0 auto;
     display: none;
   }
-  
-  .img-slide-container {
+  /* .card-slide-contaniner{
+    height: 600px !important;
+  } */
+  .img-slide-container,.card-slide-container {
     overflow: hidden;
-    position: relative;
+    position: relative !important;
     border-radius: 4px;
     max-width: 62.5rem;
     height: 400px;
+    max-height: 600px;
     line-height: 0;
   }
   
@@ -40,7 +44,7 @@
   }
   
   .slideDiv,
-  .slide {
+  .slide,.card-slide {
     width: 100%;
     height: 100%;
   }
@@ -49,30 +53,33 @@
     background-size: cover;
   }
   
+ 
   .slide:first-child {
     background: url(../images/Home/img1.png) no-repeat center;
   }
-  
+ 
   .slide:nth-of-type(2) {
     background: url(../images/Home/img2.png) no-repeat center;
   }
+  
+  
   
   .slide:nth-of-type(3) {
     background: url(../images/Home/img3.png) no-repeat center;
   }
   
   .controls {
-    top: 41%;
-    right: 0;
     padding:  0;
     text-align: center;
     position: absolute;
     top: 50%;
-    right:10px ;
+    right:5px ;
     z-index: 100;
   }
   
-  
+  /* .card-controls{
+    top: 10% !important;
+  } */
   .button { 
     width: 0.9375rem;
     height: 0.9375rem;
@@ -93,7 +100,7 @@
     border: 1px solid #fff;
     opacity: .6;
     outline: none;
-    background-color: var(--white-color);
+    background-color: var(--black-color);
   }
   
   .button:hover,
@@ -102,17 +109,22 @@
   }
   
   .selected {
-    background-color: var(--primary-color);
+    background-color: red;
   }
 
   @media screen and (max-width: 768px) {
     .wrapper,
-    .img-slide-container {
+    .img-slide-container ,.card-slide-container{
       margin: 0 auto;
       display: block;
+      height: 500px;
     }
-    .img-slider{
+    .img-slider,.card-slider{
       display: block;
+    }
+    .slide{
+      width: 330px;
+      margin: 0 auto;
     }
     
   }
