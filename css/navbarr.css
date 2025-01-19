@@ -50,7 +50,7 @@ body{
 }
  .top-header ul li{
     list-style: none;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.2;
     font-weight: 700;
  }
@@ -318,17 +318,13 @@ width: 150px;
 
   @media screen and (max-width: 768px) {
   
-    .top-header ul {
-        display: block;
-    }
+    /* .top-header ul {
+        display: none;
+    } */
     .top-header{
         display: flex;
         justify-content: center;
     }
-
-
-
-
     /* footer section */
 
     .footer-images-content{

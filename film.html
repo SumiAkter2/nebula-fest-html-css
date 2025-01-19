@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NEBULAFEST</title>
   <link rel="shortcut icon" href="./images/Home/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="/css/navbar2.css">
+  <link rel="stylesheet" href="/css/navbar.css">
   <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" href="/css/share.css">
   <link rel="stylesheet" href="/css/slider.css">
@@ -17,64 +17,70 @@
 <header >
     <!-- top header section -->
     <div class="top-header container">
-        
        <p class="date-text">10 - 19 OCTUBRE 2025</p>
-       <ul>
-        <li>ACTUALITAT  </li>
-        <li>INDÚSTRIA   </li>
-        <li>ORGANITZACIÓ  </li>
-        <li>PREMSA  </li>
-        <li>CONTACTE  </li>
+       <ul id="top-nav">
+        <li><a href="./festival.html">EL FESTIVAL</a></li>
+              <li><a href="#">ACTUALITAT</a>  </li>
+              <li><a href="#">INDÚSTRIA</a>   </li>
+              <li><a href="#">ORGANITZACIÓ</a>  </li>
+              <li><a href="#">PREMSA</a>  </li>
+              <li><a href="#">CONTACTE</a>  </li>
        </ul>
     </div>
-    <!-- navbar  -->
-     <nav class="navbar container">
-        <div class="nav-logo">
-            <img src="./images/Home/logo.png" alt="logo">
-        </div>
-         <!-- search container  -->
-        <div class="search-container search-container-mobile">
-            <span id="search-icon-mobile">
-                <img src="./images/Home/search.png" alt="search-icon"></span>
-            <input type="text" id="search-input-mobile" placeholder="Search..." style="display: none;">
-          </div>
-          <!-- Hamburger Icon -->
-          <div class="menu-toggle" id="mobile-menu">
-           
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        <!-- nav item -->
-        <ul class="navbar-menu">
-            <li><a href="#">INICI</a></li>
-            <li><a href="#">EL FESTIVAL</a></li>
-            <li><a href="#">PROGRAMACIÓ</a></li>
-            <li><a href="#">PEL·LÍCULA</a></li>
-        </ul>
-        <!-- right nav -->
-        
-        <div class="nav-right-content">
-            <div class="category">
-                <p class="category-text">
-                CAT <img style="width: 20px;" src="./images/Home/direction-down.png" alt="down-arraw"> 
-                </p>
-                <div class="category-content">
-                    <p value="art"> Art</p>
-                    <p value="music"> Music</p>
-                    <p value="movies"> Movies</p>
-                    <p value="books"> Books</p>
-                </div>
+   <div class=" navbar">
+     <!-- navbar  -->
+     <nav class=" container navbar-content">
+      <div class="nav-logo ">
+          <img src="./images/Home/logo.png" alt="logo">
+      </div>
+      <!-- nav item -->
+      <ul class="navbar-menu">
+        <li><a href="/index.html">INICI</a></li>
+            <li><a href="/programming.html">PROGRAMACIÓ</a></li>
+            <li><a href="#">DIA A DIA</a></li>
+      </ul>
+      <!-- right nav -->
+      
+      <div class="nav-right-content">
+          <div class="category">
+              <p class="category-text">
+              CAT <img style="width: 20px;" src="./images/Home/direction-down.png" alt="down-arraw"> 
+              </p>
+              <div class="category-content">
+                  <p value="art"> Art</p>
+                  <p value="music"> Music</p>
+                  <p value="movies"> Movies</p>
+                  <p value="books"> Books</p>
               </div>
-        <!-- search container  -->
-            <div class="search-container">
-                <span id="search-icon-desktop">
-                    <img src="./images/Home/search.png" alt="search-icon"></span>
-                <input type="text" id="search-input-desktop" placeholder="Search..." style="display: none;">
-              </div>
-        </div>
+            </div>
+
+            <div class="search-icon">
+              <img  src="./images/Home/search.png" alt="search-icon">
+            </div>
+            <!-- for mobile nav -->
+  
+      </div>
+   </nav>
+   <!-- for mobile nav -->
+   <div class="">
+    <div class="menu-toggle" id="mobile-menu">
        
-     </nav>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#">EL FESTIVAL</a></li>
+        <li><a href="#">ACTUALITAT</a>  </li>
+        <li><a href="#">INDÚSTRIA</a>   </li>
+        <li><a href="#">ORGANITZACIÓ</a>  </li>
+        <li><a href="#">PREMSA</a>  </li>
+        <li><a href="#">CONTACTE</a>  </li>
+      </ul>
+    </nav>
+  </div>
+   </div>
 </header>
 
 <!-- main -->
@@ -183,60 +189,20 @@
 
 
  <!-- JavaScript -->
-<!-- <script src="./js/imageSlider.js"></script>
--->
+
+<!-- navbr toggle -->
+ 
+
 <script>
-    (function() {
-function controls() {
- this.classList.add('selected');
- Array.from(this.parentNode.children).forEach(sibling => {
-   if (sibling !== this) sibling.classList.remove('selected');
- });
+  const menuToggle = document.getElementById('mobile-menu');
+const menu = document.getElementById('menu');
 
- const containerHeight = document.querySelector('.img-slide-container').offsetHeight;
- const slideDiv = document.querySelector('.slideDiv');
- const index = Array.from(this.parentNode.children).indexOf(this);
-
- slideDiv.style.transition = 'top 0.45s';
- slideDiv.style.top = `-${containerHeight * index}px`;
-}
-
-function runCode() {
- const buttons = document.querySelectorAll('.button');
-//  buttons.addEventListener.c
- buttons.forEach(button => {
-   button.addEventListener('click', controls, false);
- });
-}
-
-runCode();
-})();
-
-   </script>
- <script>
-    function toggleSearch(iconId, inputId) {
-    const icon = document.getElementById(iconId);
-    const input = document.getElementById(inputId);
-
-    icon.addEventListener('click', () => {
-        input.style.display = 'block';
-        icon.style.display = 'none';
-        input.focus();
-    });
-
-    input.addEventListener('blur', () => {
-        input.style.display = 'none';
-        icon.style.display = 'block';
-    });
-}
-
-// Apply for Mobile and Desktop
-toggleSearch('search-icon-mobile', 'search-input-mobile');
-toggleSearch('search-icon-desktop', 'search-input-desktop');
-
-  
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+</script>
 
 
-  </script>
 </body>
 </html>
