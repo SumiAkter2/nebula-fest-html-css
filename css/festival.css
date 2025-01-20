@@ -12,6 +12,9 @@
     justify-content: space-between;
     align-items: center;
 }
+/* .card-section{
+    width: 100%;
+} */
 .equip-content-left p{
     width: 30%;
     font-size: 20px;
@@ -183,7 +186,9 @@ margin-top: 30px;
         width:400px;
     }
    /* img slider */
- 
+     /* .card{
+        width: 500px;
+     } */
     .controls{
         top: 50% !important;
         right: -10px !important;
@@ -213,6 +218,9 @@ margin-top: 30px;
     .film-section img{
         width: 650px;
         margin: 30px auto;
+     }
+     .card-text-section{
+        width: 100%;
      }
 }
 @media screen and (max-width:560px) {

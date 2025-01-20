@@ -31,7 +31,7 @@
     overflow: hidden;
     position: relative !important;
     border-radius: 4px;
-    max-width: 62.5rem;
+    max-width: 600px;
     height: 400px;
     max-height: 600px;
     line-height: 0;
@@ -112,6 +112,13 @@
     background-color: var(--primary-color);
   }
 
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    .slide{
+        width: 300px;
+        margin: 0 auto;
+ }
+}
+
   @media screen and (max-width: 768px) {
     .wrapper,
     .img-slide-container ,.card-slide-container{
@@ -123,8 +130,14 @@
       display: block;
     }
     .slide{
-      width: 330px;
+      width: 550px !important;
       margin: 0 auto;
     }
     
+  }
+  @media screen and (max-width: 560px) {
+    .slide{
+      width: 320px !important;
+      margin: 0 auto;
+    }
   }
