@@ -75,7 +75,7 @@
 .banner-btn:hover{
     background-color: var(--white-color);
     cursor: pointer;
-    scale: 0.95;
+    transform: scale(0.95);
 }
 
 /* day-by-day-content */

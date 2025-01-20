@@ -70,10 +70,10 @@
     cursor: pointer;
   }
   .left-arrow{
-    rotate: -90deg;
+    transform: rotate(-90deg);
   }
   .right-arrow{
-    rotate: 90deg;
+    transform: rotate(90deg);
   }
 /* iPad Landscape (width 1024px and up) */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
