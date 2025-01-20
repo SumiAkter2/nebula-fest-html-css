@@ -118,7 +118,7 @@ ul li a {
     align-items: center;
     gap: 5px;
   }
-  .category-content {
+  /* .category-content {
     display: none;
     position: absolute;
     background-color: var(--white-color);
@@ -134,7 +134,7 @@ ul li a {
   }
   .category-content p{
     margin-bottom: 10px;
-  }
+  } */
 
  /* search icon */
  
