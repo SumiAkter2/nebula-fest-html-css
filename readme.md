@@ -1,111 +1,106 @@
 # Nebulafest
 
-
 ## index.html
 
-### This HTML structure represents a festival website for "Nebulafest," including various sections such as the 
-- header, 
-- main content (including banners,  day-by-day updates, and past edition)
+### Esta estructura HTML representa un sitio web del festival "Nebulafest", que incluye varias secciones como:
+- header,
+- contenido principal (incluyendo banners, actualizaciones día a día y ediciones anteriores)
 - footer
-### HTML Elements of index:
-- header - For the header section of the page. The header contains -
-         i.top-header section : For top navbar menu
-         ii.nav-right-content : For right content in the navbar
-- nav    - The navbar for desktop and others.
-- main   - For the main section . The header section contains -
-          .banner-content -for banner section,
-          .day-by-day-content - for day by day content,
-          .edition-content - for edition content
-- footer - For the footer content.Have - i.top-footer-content and 
-              ii. bottom-footer-content
+### Elementos HTML del índice:
+- header: para la sección de encabezado de la página. El encabezado contiene:
+i.top-header section: para el menú de la barra de navegación superior
+ii.nav-right-content: para el contenido derecho en la barra de navegación
+- nav: la barra de navegación para escritorio y otros.
+- main: para la sección principal. La sección de encabezado contiene:
+.banner-content: para la sección de banners,
+.day-by-day-content: para el contenido diario,
+.edition-content: para el contenido de la edición
+- footer: para el contenido del pie de página. Tiene: i.top-footer-content y
+ii. bottom-footer-content
 
- #### index.css:
-  - .container - only for padding whole page 
-  - .banner-content - for banner content
-  - .banner-btn -for button of banner
-  - .wheel-icon - for icon which is in banner and other section
-  - .card-slider - for card silder content
-  - .img-slider - for image slider content
-  - .footer-images-content -for footer icon which get up  the top
-  - .bottom-footer-content - for bottom section of footer
-  - .media query  - for responsiveness in every device
+#### index.css:
+- .container - solo para llenar toda la página
+- .banner-content - para el contenido del banner
+- .banner-btn - para el botón del banner
+- .wheel-icon - para el ícono que está en el banner y otras secciones
+- .card-slider - para el contenido del control deslizante de tarjetas
+- .img-slider - para el contenido del control deslizante de imágenes
+- .footer-images-content - para el ícono del pie de página que aparece en la parte superior
+- .bottom-footer-content - para la sección inferior del pie de página
+- .media query - para capacidad de respuesta en todos los dispositivos
 
+## festival.html
 
-  ## festival.html
+### Elementos HTML del festival:
+- header - para la sección del encabezado
+- main - para el contenido principal. Que contienen:
+i.edition-content: para contenido de texto e imagen
+ii.festival-content: para mostrar imágenes
+iii.card-section: para mostrar y deslizar imágenes
+iv.arrive-content: para mostrar mapas y texto
+ii.equip-section: para la sección de texto e imagen de EQUIP
 
-  ### HTML Elements of festival:
-  - header-for header section
-  - main-for main content. That contain:
-      i.edition-content- for image and text content 
-      ii.festival-content - for image showing
-      iii.card-section - for image showing and slideing
-      iv.arrive-content - for map and text showing
-     ii.equip-section container- for EQUIP image and text section
-      
-  - footer -for footer 
+- footer: para el pie de página
 
- ### fistival.css:
-   - .festival-content - 
-   - .equip-content-left - for equip left side content
-   - controls- this is the slider button control. using for positioned button in this page
-   - .arrive-content -for arrive content
-   - .location-icon - for location icon in the map image.
-   - 
+### fistival.css:
+- .festival-content:
+- .equip-content-left: para el contenido del lado izquierdo de Equip
+- controles: este es el control del botón deslizante utilizado para el botón ubicado en esta página
+- .arrive-content: para el contenido de Arrive
+- .location-icon: para el ícono de ubicación en la imagen del mapa.
+-
+## programming.html
 
-  ## programming.html
+### Elementos HTML de la página de programación:
+- header: para la sección de encabezado
+- main: para el contenido principal. Que contiene:
+i.festival-content - para el icono que aparece en la parte superior
+ii.programing-content - para el contenido de texto de programación
 
-  ### HTML Elements of programming page:
-  - header-for header section
-  - main-for main content. That contain:
-      i.festival-content - for icon which  get up  the top
-     ii.programing-content-for  programming text content
-      
-  - footer -for footer 
+- footer - para el pie de página
 
- ### programming page css is in the festival.css file:
-   - .programing-content -for pragramming content 
-   - .programing-card - have image and text
-   - programing-icon - for icon  which get up  the top
+### El CSS para la página de programación está en el archivo festival.css:
+- .programing-content - para el contenido de programación
+- .programing-card - tiene imagen y texto
+- programing-icon - para el icono que aparece en la parte superior
 
+## film.html
 
-  ## film.html
+### Elementos HTML para la película:
+- header - para la sección de encabezado
+- main - para el contenido principal. Que contienen:
+i.festival-content - para el icono que aparece en la parte superior
+ii.programing-content - para programar contenido de texto
 
-  ### HTML Elements of film:
-  - header-for header section
-  - main-for main content. That contain:
-      i.festival-content - for icon which  get up  the top
-     ii.programing-content-for  programming text content
-      
-  - footer -for footer 
+- footer - para pie de página
 
- #### film page css is in the festival.css file:
-   - .edition-content -for showing festival content 
-   - .film-section - have image and text
-   - .festival-content - for festival  header text and icon
+#### El CSS para la página de la película está en el archivo festival.css:
+- .edition-content - para mostrar el contenido del festival
+- .film-section - tiene imagen y texto
+- .festival-content - para el texto y el icono del encabezado del festival
 
-#### file page css is in the festival.css file:
-   - .film-section -for film content 
-   - .film-section img - for image 
-   - .film-icon - for icon in this page
+#### El CSS para la página de archivo está en el archivo festival.css:
+- .film-section - para el contenido de la película
+- .film-section img - para la imagen
+- .film-icon - para el icono de esta página
 
-
-###  Some css file which is shared for other pages too:
+### Algunos archivos CSS que también se comparten para otras páginas:
 
 ### share.css:
-- .header-text - for the title of the pages
-- .card - for all card 
-- .card-section 
-- .card-text-section - for card text section
-- .arrow - which is in only mobile and tablet view
-- .left-arrow - for left arrow 
-- .right-arrow -for right arrow
+- .header-text - para el título de la página
+- .card - para todas las tarjetas
+- .card-section
+- .card-text-section - para la sección de texto de las tarjetas
+- .arrow - que solo está en dispositivos móviles y Vista de tableta
+- .left-arrow - para la flecha izquierda
+- .right-arrow - para la flecha derecha
 
 ### slider.css:
-- .img-slider,.card-slider - for the image and card slider
-- .wrapper - this is wrapper for slider content 
+- .img-slider,.card-slider - para el control deslizante de imagen y tarjeta
+- .wrapper - este es el contenedor para el contenido del control deslizante
 - .img-slide-container,.card-slide-container
-- .slideDiv- for all slide content
-- .slide,.card-slide - fixed the width and height of the image or card content
-- .slide:nth-of-type - set the image in the slide
-- .button - this is the slider button
-- .selected - for  selected button 
+- .slideDiv - para todo el contenido de la diapositiva
+- .slide,.card-slide - establece el ancho y la altura de la imagen o el contenido de la tarjeta
+- .slide:nth-of-type - establece la imagen en la diapositiva
+- .button - este es el botón en el control deslizante
+- .selected - para el botón seleccionado
