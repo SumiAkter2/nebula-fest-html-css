@@ -56,7 +56,7 @@
   }
    /* img card */
    .img-card img{
-    width: 350px;
+    width: 100%;
     margin-top: 20px;
   }
 
@@ -75,6 +75,15 @@
   .right-arrow{
     rotate: 90deg;
   }
+/* iPad Landscape (width 1024px and up) */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .card{
+      width: 300px;
+      margin: 0 auto;
+}
+}
+
+
   @media screen and (max-width:999px) {
     .card{
       width: 380px;
@@ -86,10 +95,10 @@
     .card-text{
       font-size: 14px;
     }
-    .img-card img{
+    /* .img-card img{
       width: 200px;
       
-     }
+     } */
   }
 
   @media screen and (max-width:768px) {
