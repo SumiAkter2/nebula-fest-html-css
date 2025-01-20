@@ -86,7 +86,7 @@
 
   @media screen and (max-width:999px) {
     .card{
-      width: 380px;
+      width: 360px;
     height:450px;
     }
     .card-header{
@@ -126,9 +126,9 @@
     height: 400px;
     margin: 0 auto;
     }
-    .card img{
+    /* .card img{
       width: 310px;
-    }
+    } */
     .img-card {
       display: none;
     }
