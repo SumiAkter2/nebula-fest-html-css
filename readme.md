@@ -86,6 +86,24 @@ ii.programing-content - para programar contenido de texto
 
 ### Algunos archivos CSS que también se comparten para otras páginas:
 
+#### navbar.css:
+- .top-header - contiene el encabezado superior
+- .navbar - contiene el logotipo y el menú de la barra de navegación
+- .navbar-content - para el contenido de la barra de navegación
+- .navbar-menu - para el menú de la barra de navegación
+- .nav-right-content - este es el contenido del lado derecho solo en el escritorio, como la categoría
+- .category - contiene la categoría que solo está en el escritorio
+- .search-icon - para el ícono de búsqueda
+- .menu-toggle - alternador de la barra de menú
+- .menu - para el menú de dispositivos pequeños
+
+### CSS de pie de página en navbar.css
+
+- .top-footer-content - contenido del pie de página superior. Contiene logotipos de marca
+- .footer-text: para el texto del pie de página
+- .round-img, .star-img: para logotipos de marca redondos y logotipos de estrella
+- .bottom-footer-content: para el contenido inferior del pie de página, como el icono y el logotipo de redes sociales
+
 ### share.css:
 - .header-text - para el título de la página
 - .card - para todas las tarjetas
@@ -104,3 +122,5 @@ ii.programing-content - para programar contenido de texto
 - .slide:nth-of-type - establece la imagen en la diapositiva
 - .button - este es el botón en el control deslizante
 - .selected - para el botón seleccionado
+
+
