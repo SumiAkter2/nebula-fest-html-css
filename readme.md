@@ -1,22 +1,22 @@
-#### Nebulafest
+# Nebulafest
 
 
-#### index.html
+## index.html
 
 ### This HTML structure represents a festival website for "Nebulafest," including various sections such as the 
 - header, 
 - main content (including banners, news, day-by-day updates, and past edition)
 - footer
-## HTML Elements:
-- <header> : For the header section of the page. The header contains -
+### HTML Elements of index:
+- <header> - For the header section of the page. The header contains -
          i.top-header section : For top navbar menu
          ii.nav-right-content : For right content in the navbar
-- <nav>    : The navbar for desktop and others.
-- <main>   : For the main section . The header section contains -
+- <nav>    - The navbar for desktop and others.
+- <main>   - For the main section . The header section contains -
           .banner-content -for banner section,
           .day-by-day-content - for day by day content,
           .edition-content - for edition content
-- <footer> : For the footer content.Have : i.top-footer-content and 
+- <footer> - For the footer content.Have - i.top-footer-content and 
               ii. bottom-footer-content
 
  #### index.css:
@@ -31,9 +31,9 @@
   - .media query  - for responsiveness in every device
 
 
-  #### festival.html
+  ## festival.html
 
-  ## HTML Elements:
+  ### HTML Elements of festival:
   - <header>-for header section
   - <main>-for main content. That contain:
       i.edition-content- for image and text content 
@@ -44,7 +44,7 @@
       
   - <footer> -for footer 
 
- #### fistival.css:
+ ### fistival.css:
    - .festival-content - 
    - .equip-content-left - for equip left side content
    - controls- this is the slider button control. using for positioned button in this page
@@ -52,9 +52,9 @@
    - .location-icon - for location icon in the map image.
    - 
 
-  #### programming.html
+  ## programming.html
 
-  ## HTML Elements:
+  ### HTML Elements of programming page:
   - <header>-for header section
   - <main>-for main content. That contain:
       i.festival-content - for icon which  get up  the top
@@ -62,15 +62,15 @@
       
   - <footer> -for footer 
 
- #### programming page css is in the festival.css file:
+ ### programming page css is in the festival.css file:
    - .programing-content -for pragramming content 
    - .programing-card - have image and text
    - programing-icon - for icon  which get up  the top
 
 
-  #### film.html
+  ## film.html
 
-  ## HTML Elements:
+  ### HTML Elements of film:
   - <header>-for header section
   - <main>-for main content. That contain:
       i.festival-content - for icon which  get up  the top
@@ -89,7 +89,7 @@
    - .film-icon - for icon in this page
 
 
-####  Some css file which is shared for other pages too:
+###  Some css file which is shared for other pages too:
 
 ### share.css:
 - .header-text - for the title of the pages
