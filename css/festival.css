@@ -228,7 +228,9 @@ margin-top: 30px;
         justify-content: center;
         gap: 30px ;
     }
-
+    .map-img{
+        width:320px;
+    }
     .arrive-section{
         flex-direction:  column;
         justify-content: center;

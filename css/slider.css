@@ -136,6 +136,7 @@
     
   }
   @media screen and (max-width: 560px) {
+    
     .slide{
       width: 320px !important;
       margin: 0 auto;
